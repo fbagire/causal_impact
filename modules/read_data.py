@@ -8,7 +8,7 @@ le = LabelEncoder()
 def read_data(path):
     data = pd.read_csv(path)
     try:
-        data = data.drop('Unnamed 32', axis=1, inplace=True)
+        data.drop('Unnamed: 32', axis=1, inplace=True)
     except KeyError:
         pass
     non_numeric_columns = list(data.select_dtypes(exclude=[np.number]).columns)
