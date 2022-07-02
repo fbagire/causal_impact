@@ -1,2 +1,2 @@
-# casual_impact
+# causal_impact
  
